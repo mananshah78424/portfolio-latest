@@ -457,11 +457,11 @@ nav.navbar.bootsnav .share ul > li > a{
 
 /* Transparent
 =================================*/
-nav.navbar.bootsnav.navbar-fixed{
+/* nav.navbar.bootsnav.navbar-fixed{
     position: fixed;
     display: block;
     width: 100%;
-}
+} */
 
 nav.navbar.bootsnav.no-background{
     -webkit-transition: all 1s ease-in-out;

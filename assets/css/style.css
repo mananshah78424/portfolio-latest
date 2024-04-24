@@ -207,6 +207,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 
 
+
+
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -552,9 +554,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     position: relative;
 }
 
-.experience-time h3{
-    color: red;
-    font-weight: 400;
+.experience-time h2{
+    margin-top: 10px;
+    font-weight: 200;
 }
 .timeline-content span>i, .experience-time span>i {
     color: #d92cf9;
@@ -563,21 +565,28 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     left: -14.5%;
     z-index: 1;
 }
-.timeline-content h4.title {
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: "Poppins",sans-serif;
+.timeline-content h3.title {
+    font-size: 28px;
+    font-weight: 200; /* Adjusted font weight for better readability */
+    font-family: "Poppins", sans-serif;
+    color: #333; /* Darkened the color for better contrast */
+    margin-bottom: 10px; /* Added some bottom margin for spacing */
+    font-style: normal;
 }
-.timeline-content h5 {
+
+.timeline-content h3 {
+    font-size: 16px; /* Slightly reduced the font size */
+    font-weight: 200; /* Adjusted font weight for better readability */
+    font-family: "Poppins", sans-serif;
     color: #636a82;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 18px 0 20px;
+    margin: 12px 0; /* Adjusted top and bottom margin for spacing */
+    font-style: italic;
 }
+
 .main-timeline .description {
     font-size: 14px;
     color: #999fb3;
+    font-weight: 400;
     text-align: justify;
 }
 .main-timeline .timeline-content.right{
@@ -609,9 +618,24 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     align-items: center;
     flex-direction: column;
 }
+.article-link {
+    display: flex;
+    align-items: stretch; /* Ensure both columns have equal height */
+    text-decoration: none;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.article-text {
+    padding: 20px; /* Add padding for spacing */
+}
 
 .profiles-content .col-sm-2{
-    width: 18%;
+    width: 16.66666666676%;
 }
 
 .profiles-content .col-sm-1{
@@ -792,6 +816,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     resize: none;
 }
 
+
+
 /*--contct button--*/
 .contact-form .single-contact-btn {
     display:flex;
@@ -935,6 +961,31 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+.section-heading h1 {
+    font-size: 3em;
+    color: black;
+    font-weight: 600;
+}
+.section-heading .header-name{
+    color: rgb(184, 47, 184);
+}
+
+.header-desc{
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+/* Add this custom CSS to your stylesheet */
+
+.body {
+    padding: 100px 0;
+    background: linear-gradient(to bottom right, #f0f0f0, #dcdcdc);
+    color: #333; /* Set text color to a darker shade for better readability */
+}
+
+
 /*========================Thank you=================
 
 

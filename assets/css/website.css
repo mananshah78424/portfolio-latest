@@ -1,0 +1,59 @@
+.color-code {
+  color: #64748b;
+}
+
+.change-color {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.change-color-400 {
+  color: rgb(148 163 184);
+}
+.change-color-300 {
+  color: rgb(203 213 225);
+}
+.bg-teal-400-10 {
+  background-color: rgba(45, 212, 191, 0.1);
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
+.text-teal-300,
+.date-color {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
+.hovereffect {
+  position: relative;
+  display: grid;
+  padding-bottom: 0.25rem; /* Equivalent to pb-1 */
+  transition: all 0.3s ease; /* Smoother transition */
+  overflow: visible; /* Ensure pseudo-element can overflow */
+}
+
+.hovereffect::before {
+  content: "";
+  position: absolute;
+  top: -15px; /* Increase to create a larger gap */
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+  background-color: transparent;
+  transition: all 0.3s ease; /* Smoother transition */
+  z-index: -1; /* Ensure it stays behind the original content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hovereffect:hover::before {
+  background-color: rgb(30, 41, 59); /* Adding the hover background color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: scale(1.05); /* Slightly increase size on hover for emphasis */
+}
+
+.hovereffect:hover .change-color-300 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
